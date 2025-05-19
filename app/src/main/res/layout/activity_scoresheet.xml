@@ -10,12 +10,12 @@
 
     <TextView
         android:id="@+id/scoreTextView"
-        android:layout_width="157dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="138dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="535dp"
+        android:layout_width="229dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="644dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="TextView"
         android:textAlignment="center"
@@ -29,12 +29,12 @@
 
     <TextView
         android:id="@+id/totalTextView"
-        android:layout_width="280dp"
-        android:layout_height="347dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="164dp"
+        android:layout_width="260dp"
+        android:layout_height="430dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="172dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="TextView"
         android:textAlignment="center"
@@ -46,12 +46,12 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="301dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="617dp"
+        android:layout_width="337dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="708dp"
         android:fontFamily="@font/abril_fatface"
         android:text="Echoes of History"
         android:textAlignment="center"
@@ -61,4 +61,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="732dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="66dp"
+        android:backgroundTint="#070707"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val beginButton = findViewById<Button>(R.id.beginButton)
         beginButton.setOnClickListener {
-            // Optional: You could use the nameTextView1 and bioTextView to pass user info
+
             val intent = Intent(this, Questions::class.java)
             startActivity(intent)
         }
