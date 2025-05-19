@@ -20,6 +20,7 @@ class Questions : AppCompatActivity() {
     private lateinit var falseButton: Button
     private lateinit var nextButton: Button
     private lateinit var questionTextView: TextView
+    private lateinit var feedbackTextView: TextView
 
 
         private val quizData = arrayOf(
@@ -54,6 +55,7 @@ class Questions : AppCompatActivity() {
             trueButton = findViewById<Button>(R.id.trueButton)
             falseButton = findViewById<Button>(R.id.falseButton)
             nextButton = findViewById<Button>(R.id.nextButton)
+            feedbackTextView = findViewById(R.id.feedbackTextView)
 
 
 
@@ -79,6 +81,7 @@ class Questions : AppCompatActivity() {
                     currentIndex++
                     questionTextView.text = quizData[currentIndex].question
                     enableAnswerButtons()
+                    feedbackTextView.text = ""
 
                 } else {
 
@@ -99,6 +102,9 @@ class Questions : AppCompatActivity() {
 
         if (userAnswer == correctAnswer) {
             score++
+            feedbackTextView.text = "Correct!"
+        } else {
+            feedbackTextView.text = "Incorrect!"
 
         }
     }
