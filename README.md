@@ -32,9 +32,9 @@ It also provides a feedback which gives a comment based on your mark.
 
 ## Requirements
 
-Android Studio 
-GitHub
-Java
+Android Studio, 
+GitHub, 
+Java, 
 
 ## Installation
 
