@@ -31,7 +31,6 @@ class Questions : AppCompatActivity() {
             Quiz("The first known use of fire by early humans was discovered in South Africa.", true)
         )
 
-
         private var currentIndex = 0
         private var score = 0
     private val userAnswers = mutableListOf<Boolean?>()
@@ -50,17 +49,13 @@ class Questions : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_questions)
 
-
             questionTextView = findViewById<TextView>(R.id.questionTextView)
             trueButton = findViewById<Button>(R.id.trueButton)
             falseButton = findViewById<Button>(R.id.falseButton)
             nextButton = findViewById<Button>(R.id.nextButton)
             feedbackTextView = findViewById(R.id.feedbackTextView)
 
-
-
             questionTextView.text = quizData[currentIndex].question
-
 
             trueButton.setOnClickListener {
                 checkAnswer(true)
@@ -69,12 +64,10 @@ class Questions : AppCompatActivity() {
 
             }
 
-
             falseButton.setOnClickListener {
                 checkAnswer(false)
                 disableAnswerButtons()
             }
-
 
             nextButton.setOnClickListener {
                 if (currentIndex < quizData.size - 1) {

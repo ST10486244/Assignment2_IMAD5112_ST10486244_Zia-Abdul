@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.system.exitProcess
 
 class Scoresheet : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -21,14 +22,21 @@ class Scoresheet : AppCompatActivity() {
 
         // Get the TextViews
         val scoreTextView = findViewById<TextView>(R.id.scoreTextView)
-        val resultTextView = findViewById<TextView>(R.id.totalTextView)
+        val totalTextView = findViewById<TextView>(R.id.totalTextView)
+        val reviewButton= findViewById<Button>(R.id.reviewButton)
         val exitButton = findViewById<Button>(R.id.exitButton)
 
+        exitButton.setOnClickListener {
+            finishAffinity() // Closes all activities in the task
+            exitProcess(0)   // Terminates the process
+        }
 
         // Set the score
         scoreTextView.text = "You scored $score out of $total"
 
-        // Set the results
-        resultTextView.text = results?.joinToString("\n\n") ?: "No results"
+        reviewButton.setOnClickListener {
+            val reviewContent = results?.joinToString("\n\n") ?: "No review available."
+            totalTextView.text = reviewContent
+        }
     }
 }

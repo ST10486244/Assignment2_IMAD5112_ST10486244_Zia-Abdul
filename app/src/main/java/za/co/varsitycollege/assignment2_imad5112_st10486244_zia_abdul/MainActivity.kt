@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+        // button that starts the quiz
         val beginButton = findViewById<Button>(R.id.beginButton)
         beginButton.setOnClickListener {
 
