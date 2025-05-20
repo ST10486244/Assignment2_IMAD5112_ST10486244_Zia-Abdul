@@ -16,10 +16,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
         // button that starts the quiz
         val beginButton = findViewById<Button>(R.id.beginButton)
         beginButton.setOnClickListener {
 
+            // navigation between screens
             val intent = Intent(this, Questions::class.java)
             startActivity(intent)
         }
