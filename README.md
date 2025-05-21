@@ -5,7 +5,7 @@ This is a history quiz app based on South African history. It provides 5 questio
 
 ## Features
 
-- Asks yoy 5 quiz questions which helps you learn in a fun way
+- Asks you 5 quiz questions which helps you learn in a fun way
 - Fullscreen mode
 - Android App
 
