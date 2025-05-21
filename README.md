@@ -60,7 +60,13 @@ Java,
 
 
 ## Reference 
+The Independent Institute of 
+Education (IIE), 2025. Introduction to Mobile Applications Development [IMAD5112 MM.docx]. The Independent Institute of 
+Education: Unpublished . Available at: <https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7BA1FF62F0-8E1A-47BC-99BD-CA07AE24427D%7D&file=IMAD5112_MM.docx&action=default&mobileredirect=true>.
+[Accessesd 18May2025]
 
+## AI Disclosure 
+I used OpenAI's ChatGPT (https://chat.openai.com) to support the development of this assignment. The tool was used to [ e.g Break and explain code, simplify code, generate ideas]. All content has been reviewed, edited, and critically evaluated to ensure originality and alignment with academic standards. No generative AI was used to create final written submissions without my own input and oversight.
 
 
 
